@@ -20,7 +20,9 @@ public class PlayerController : MonoBehaviour
         Debug.Log(Time.deltaTime);
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
-        transform.Translate(Vector3.forward * Time.deltaTime * speed * verticalInput);;
+        //Moves the car forward
+        transform.Translate(Vector3.forward * Time.deltaTime * speed * verticalInput);
+        //Turns the car
         transform.Rotate(Vector3.up, Time.deltaTime * turnSpeed * horizontalInput);
 
     }
