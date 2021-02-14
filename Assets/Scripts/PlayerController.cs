@@ -15,5 +15,6 @@ public class PlayerController : MonoBehaviour
     {
         Debug.Log(Time.deltaTime);
         transform.Translate(Vector3.forward * Time.deltaTime * 15);
+
     }
 }
